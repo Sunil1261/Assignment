@@ -14,7 +14,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 
-import org.assignments.Constants;
+import org.assignments.utils.Constants;
 import org.assignments.ModelClasses.RecipesBeen;
 import org.assignments.interfaces.RecipesInterface;
 import org.json.JSONObject;
@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by mahiti on 23/12/17.
+ * Created by sunil on 23/12/17.
  */
 
 public class RecipesListApi

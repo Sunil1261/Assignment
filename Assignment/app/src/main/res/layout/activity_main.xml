@@ -1,44 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
+
     <data>
-        <variable name="activity" type="org.assignments.MainActivity"/>
+
+        <variable
+            name="activity"
+            type="org.assignments.activity.MainActivity" />
     </data>
+
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ingredients"
-        android:text="ginger,pepper" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/search_query"
-        android:layout_below="@+id/ingredients"
-        android:text="tomato" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/getRecipes"
-        android:layout_below="@+id/search_query"
-        android:text="GetRecipe"/>
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/recipesList"
-        android:layout_below="@+id/getRecipes"
-        android:layout_above="@+id/footer">
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp">
 
-    </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/recipeSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Search Recipe Details"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipeSearch"
+            android:background="@drawable/edt_background"
+            android:hint="Please enter ingredients in ',' separated "
+            android:text="" />
+
+        <EditText
+            android:id="@+id/search_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredients"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edt_background"
+            android:hint="Please enter search item"
+            android:text="" />
+
+        <Button
+            android:id="@+id/getRecipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/search_query"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|center_horizontal"
+            android:background="@drawable/bg_btn_login"
+            android:text="GetRecipe"
+            android:textColor="#FFF" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recipesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/footer"
+            android:layout_below="@+id/getRecipes"
+            android:layout_marginTop="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
         <RelativeLayout
             android:id="@+id/footer"
             android:layout_width="fill_parent"
@@ -46,8 +73,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="6dp"
             android:layout_marginLeft="23dp"
-            android:layout_marginRight="23dp"
-            >
+            android:layout_marginRight="23dp">
             <!--
                     android:background="#f1f0f0"
             -->
@@ -57,8 +83,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
+                android:background="@drawable/bg_btn_login"
                 android:text="Previous"
-                android:textColor="#000" />
+                android:textColor="#FFF" />
 
             <Button
                 android:id="@+id/next"
@@ -66,9 +93,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
+                android:background="@drawable/bg_btn_login"
                 android:text="Next"
-                android:textColor="#000" />
+                android:textColor="#FFF" />
         </RelativeLayout>
 
-</RelativeLayout>
+    </RelativeLayout>
+
 </layout>

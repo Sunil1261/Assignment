@@ -1,7 +1,7 @@
-package org.assignments;
+package org.assignments.utils;
 
 /**
- * Created by mahiti on 23/12/17.
+ * Created by sunil on 23/12/17.
  */
 
 public class Constants

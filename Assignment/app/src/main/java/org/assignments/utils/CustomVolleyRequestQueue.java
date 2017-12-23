@@ -1,4 +1,4 @@
-package org.assignments;
+package org.assignments.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,7 +13,7 @@ import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.ImageLoader;
 
 /**
- * Created by mahiti on 4/5/17.
+ * Created by sunil on 23/12/17.
  */
 
 public class CustomVolleyRequestQueue {

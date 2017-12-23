@@ -1,13 +1,15 @@
-package org.assignments;
+package org.assignments.utils;
 
 import android.content.Context;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 
+import org.assignments.R;
+
 
 /**
- * Created by mahiti on 31/8/16.
+ * Created by sunil on 23/12/17.
  */
 public class Utilities {
 

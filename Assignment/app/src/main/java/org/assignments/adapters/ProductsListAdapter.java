@@ -7,23 +7,21 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.NetworkImageView;
 
-import org.assignments.ModelClasses.RecipesBeen;
 import org.assignments.ModelClasses.Result;
 import org.assignments.R;
-import org.assignments.RecipeDetails;
-import org.assignments.Utilities;
+import org.assignments.activity.RecipeDetails;
+import org.assignments.utils.Utilities;
 
 import java.util.List;
 
 
 /**
- * Created by mahiti on 22/4/17.
+ * Created by sunil on 23/12/17.
  */
 
 public class ProductsListAdapter extends RecyclerView.Adapter<ProductsListAdapter.CategoryViewHolder> {

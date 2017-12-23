@@ -1,0 +1,6 @@
+1.Designed two edit texts to get the gradients and search item and one button for search the recipe 
+2.By default previous and next buttons are in gone state .Once the user click on the getrecipe button it will call the api to get the recipe details once the recipe details got through interface passing the data to class once the details got in the class taking the list in the result passing that data to adapter.
+3.Passing the result from the activity to the adapter based on the current page number showing and hiding the previous and next buttons.
+4.Once the user click on the next item it will increase the current page number and will call the api to get the second page details .
+5.If the user click on previous decresing the page number and calling api to get the page details.
+6.User click on the item of the recipe it will open new page to display recipe details.
