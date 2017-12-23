@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="activity" type="org.assignments.MainActivity"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingredients"
+        android:text="ginger,pepper" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_query"
+        android:layout_below="@+id/ingredients"
+        android:text="tomato" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getRecipes"
+        android:layout_below="@+id/search_query"
+        android:text="GetRecipe"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipesList"
+        android:layout_below="@+id/getRecipes"
+        android:layout_above="@+id/footer">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            >
+            <!--
+                    android:background="#f1f0f0"
+            -->
+            <Button
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Previous"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Next"
+                android:textColor="#000" />
+        </RelativeLayout>
+
+</RelativeLayout>
+</layout>

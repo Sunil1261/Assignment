@@ -1,0 +1,21 @@
+buildscript {
+    ext.kotlin_version = '1.2.10'//1
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // 2
+
+    }
+}
+apply plugin: 'kotlin'
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+
+        google()
+    }
+}
+
